@@ -44,7 +44,7 @@ class SuperadminController extends Controller
         $creds = $request->only('email','password');
 
         if( Auth::guard('superadmin')->attempt($creds) ){
-            return redirect()->route('superadmin.home');
+            return redirect()->route('superadmin.dashboard');
         }else{
             return redirect()->route('superadmin.login')->with('fail','Incorrect Credentials');
         }

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Superadmin\SuperadminController;
+use App\Http\Controllers\Superadmin\ManageUserController;
+use App\Http\Controllers\Superadmin\ManageCompanyController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('superadmin')->name('superadmin.')->group(function(){
@@ -13,7 +15,9 @@ Route::prefix('superadmin')->name('superadmin.')->group(function(){
   });
 
   Route::middleware(['auth:superadmin','PreventBackHistory'])->group(function(){
-       Route::view('/home','dashboard.superadmin.home')->name('home');
+       Route::view('/dashboard','dashboard.superadmin.index')->name('dashboard');
+       Route::resource('users', ManageUserController::class);
+       Route::resource('companies', ManageCompanyController::class);
        Route::post('logout',[SuperadminController::class,'logout'])->name('logout');
   });
 

@@ -30,3 +30,8 @@ Next, add your database credentials in `.env` file and then run migrations.
 # run migration
 $ php artisan migrate --seed
 ```
+
+```shell
+# link storage
+$ php artisan storage:link
+```
