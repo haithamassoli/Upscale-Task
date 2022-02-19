@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-    <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C4D0BAQHjGR9EKnHqew/company-logo_200_200/0/1614445835332?e=2159024400&v=beta&t=rlH4YY8e_wFoDXgNnWVp9oWGeXT5AY0aMjd9hJXAXhE" type="image/x-icon">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
                 <div class="ms-4">
                     <div class="d-flex justify-content-between">
                         <div class="logo pt-5 ps-3">
-                            <a href="/superadmin/dashboard"><img src="{{ asset('img/logo.png') }}" width="124" height="44"
-                                    alt="Logo" srcset=""></a>
+                            <a href="/superadmin/dashboard"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHjGR9EKnHqew/company-logo_200_200/0/1614445835332?e=2159024400&v=beta&t=rlH4YY8e_wFoDXgNnWVp9oWGeXT5AY0aMjd9hJXAXhE" width="100" style="border-radius:10px" height="100"
+                                    alt="Logo" ></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
